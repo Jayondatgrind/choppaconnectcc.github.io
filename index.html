@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>choppaconnect.cc</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0a0a0a;
+      color: #ddd;
+      line-height: 1.6;
+    }
+    header {
+      background: #111;
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 4px solid #00ff88;
+    }
+    h1 {
+      color: #00ff88;
+      margin: 0;
+      font-size: 3.5em;
+      text-transform: lowercase;
+    }
+    .tagline {
+      font-size: 1.4em;
+      color: #aaa;
+    }
+    .copy-link {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .copy-btn {
+      background: #00ff88;
+      color: #000;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1.2em;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .copy-btn:hover {
+      background: #00cc70;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #00ff88;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #1a1a1a;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #333;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #00ff88;
+    }
+    .price {
+      font-size: 2.2em;
+      color: #00ff88;
+      margin: 15px 0;
+      font-weight: bold;
+    }
+    .rules {
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 12px;
+      margin: 50px 0;
+      border: 1px solid #444;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .warning {
+      background: #3a1a1a;
+      border-left: 5px solid #ff4444;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 6px;
+      color: #ffdddd;
+    }
+    .cashapp-section {
+      text-align: center;
+      margin: 40px 0;
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid #444;
+    }
+    .cash-tag {
+      font-size: 2.5em;
+      color: #00ff88;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    a {
+      color: #00ff88;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #111;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>choppaconnect.cc</h1>
+    <p class="tagline">Fast FiveM Spawns • CashApp Only • Guns • Dono Cars • Money Drops</p>
+    
+    <div class="copy-link">
+      <button class="copy-btn" onclick="copyLink()">Copy Site Link</button>
+      <p id="copy-msg" style="margin-top:10px; color:#00ff88; display:none;">Link copied! Share it anywhere.</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>Current Services & Prices</h2>
+    
+    <div class="services">
+      <div class="card">
+        <h3>Normal Gun</h3>
+        <p>Any standard pistol spawn</p>
+        <div class="price">$1.50</div>
+        <p>Quick & clean delivery</p>
+      </div>
+
+      <div class="card">
+        <h3>Non-Pistol Gun</h3>
+        <p>Rifles, SMGs, shotguns, etc.</p>
+        <div class="price">$2.00</div>
+        <p>Any non-pistol weapon</p>
+      </div>
+
+      <div class="card">
+        <h3>Dono Car</h3>
+        <p>Custom donator vehicle spawn</p>
+        <div class="price">$8.30</div>
+        <p>Plates & mods available</p>
+      </div>
+
+      <div class="card">
+        <h3>Dono Gun</h3>
+        <p>Special / donator weapon spawn</p>
+        <div class="price">$4.30</div>
+        <p>Limited or custom models</p>
+      </div>
+
+      <div class="card">
+        <h3>Money Drop</h3>
+        <p>Clean in-game cash spawn</p>
+        <div class="price">$1 per 5 million</div>
+        <p>Any amount – ask in ticket</p>
+      </div>
+
+      <div class="card">
+        <h3>Bundles</h3>
+        <p>Mix & match – save more</p>
+        <div class="price">DM for custom quote</div>
+        <p>Best rates for multiples</p>
+      </div>
+    </div>
+
+    <div class="cashapp-section">
+      <h2>Pay Here</h2>
+      <p style="font-size:1.3em;">Send payment to:</p>
+      <div class="cash-tag">$ChoppaConnect</div>
+      <p style="font-size:1.2em; margin:20px 0;">Copy the tag above and send your amount in CashApp.</p>
+    </div>
+
+    <div class="rules">
+      <h2>How To Buy & Rules</h2>
+      <div class="warning">
+        <strong>IMPORTANT WARNING:</strong> Before sending any CashApp payment, double-check the exact tag is <strong>$ChoppaConnect</strong> with staff in your ticket. Never send money outside of an open Discord ticket. Always send proof of payment in the ticket first. Scammers may try to impersonate — stay safe and verify everything in #create-ticket.
+      </div>
+      <ul>
+        <li>Payments: CashApp ONLY – tag must be $ChoppaConnect</li>
+        <li>Step 1: Join Discord and open a ticket in #create-ticket first</li>
+        <li>Step 2: Send payment via CashApp</li>
+        <li>Step 3: Upload proof (screenshot) in the ticket</li>
+        <li>We will get with you ASAP after proof – usually minutes</li>
+        <li>No refunds after spawn delivered</li>
+        <li>Chargebacks or disputes = permanent blacklist</li>
+        <li>18+ only, at your own risk</li>
+      </ul>
+      <p style="text-align:center; margin-top:30px; font-size:1.2em;">
+        Ready to buy? Join Discord: <a href="https://discord.gg/8pVqmXUB" target="_blank">discord.gg/8pVqmXUB</a>
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p>choppaconnect.cc • All sales final • CashApp Only • © 2026</p>
+  </footer>
+
+  <script>
+    function copyLink() {
+      navigator.clipboard.writeText(window.location.href);
+      document.getElementById("copy-msg").style.display = "block";
+      setTimeout(() => {
+        document.getElementById("copy-msg").style.display = "none";
+      }, 3000);
+    }
+  </script>
+
+</body>
+</html>
